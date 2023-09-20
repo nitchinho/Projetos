@@ -21,7 +21,7 @@ export default function App() {
       <View style={styles.carddescricao}>
         <Image style={styles.foto} source={Foto} />
         <Text style={styles.titulo}>Rodrigo Almeida</Text>
-        <Text style={styles.paragrafo}>Estudante de análise e desenvolvimento de sistemas, certificado SCRUM PSM I, me aperfeiçoando na linguagem JavaScript e seus frameworks (Node.JS, React, React Active)</Text>
+        <Text style={styles.paragrafo}>Estudante de análise e desenvolvimento de sistemas, certificado SCRUM PSM I, me aperfeiçoando na linguagem JavaScript e seus frameworks (Node.JS, React, React Native)</Text>
       </View>
       <Button title='Meu portiflio' onPress={onPress}/>
     </View>
