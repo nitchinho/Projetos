@@ -10,13 +10,13 @@ box:{
     backgroundColor: '#fff',
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 10,
+    borderRadius: 10,    
     width: 300,
 },
 fotoCapa: {
-    width: 300,
-    borderBottomLeftRadius: 10,
-    borderBottomRightRadius: 10,
+    width: 300,    
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
 },
 nome: {
     marginTop: 10,
