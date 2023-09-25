@@ -1,8 +1,33 @@
 import React from 'react';
-import {Text} from 'react-native';
+import { Text, View, Image, Button } from 'react-native';
+import styles from '../../styles';
 
-export default function Trilogia2() {
-    return (
-        <Text>Tela Trilogia 2</Text>
-    )
+import imagem from '../../assets/lucas-skywalker.jpg';
+
+export default function Trilogia2(props) {
+  return (
+    <View style={styles.container}>
+      <View style={styles.boxDescricao}>
+        <Text style={styles.titulo}>A história de Luke Skywalker</Text>
+
+        <Image source={imagem} style={styles.imagem}/>
+
+        <Text style={styles.textos}>
+          Trilogia original. Episódios I, II e III
+        </Text>
+
+        <Text style={styles.textos}>
+          Essa foi primeira trilogia a surgir, porém sua história se passa após a trilogia prequela.
+        </Text>
+
+        <Text style={styles.textos}>
+          Nela, Luke Skywalker se aventura pela galáxia para atender a um pedido de socorro da princesa Leia e inicia uma batalha com o grande vilão Darth Vader.
+        </Text>
+      </View>
+      <Button
+                title='Voltar'
+                onPress={() => props.navigation.navigate('Tela Inicial')} color={"#372d00"}
+            />
+    </View>
+  )
 }
