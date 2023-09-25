@@ -6,21 +6,23 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
 
 import TelaInicial from './Componentes/TelaInicial';
 import TelaPerfil from './Componentes/TelaPerfil';
 
 //2º - iniciar o componente responsável por definir as rotas:
 const Tabs = createBottomTabNavigator();
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
     //3º - Criar as rotas do aplicativo
     <NavigationContainer>
-      <Tabs.Navigator>
-        <Tabs.Screen name="Início" component={TelaInicial} />
-        <Tabs.Screen name="Perfil" component={TelaPerfil} />
-      </Tabs.Navigator>
+      <Stack.Navigator>
+        <Stack.Screen name="Início" component={TelaInicial} />
+        <Stack.Screen name="Perfil" component={TelaPerfil} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 }

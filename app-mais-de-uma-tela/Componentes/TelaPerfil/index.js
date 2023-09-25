@@ -1,21 +1,16 @@
 import React from "react"
-import { View, Text } from "react-native"
+import { View, Text, Button } from "react-native"
 
-export default function TelaPerfil() {
+export default function TelaPerfil(props) {
     return (
         <View>
             <Text>
                 Tela do Perfil
             </Text>
+            <Button
+            title="Ir para Tela Inicial"
+            onPress={()=> {props.navigation.navigate('Início')}}
+            />
         </View>
     );    
 }
-
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-});
