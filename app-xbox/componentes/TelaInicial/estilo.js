@@ -1,22 +1,32 @@
 import { StyleSheet } from "react-native";
 
-const estilo= StyleSheet.create({
+const estilo = StyleSheet.create({
     container: {
-        flex:1,
+        flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#6d6d6d'
-        
+        backgroundColor: '#6d6d6d',
+        padding: 15,
+
     },
     card: {
-        width: 250,        
+        width: 250,
         backgroundColor: '#107c0f',
         marginBottom: 20,
-        alignItems: 'center',        
+        alignItems: 'center',
         borderRadius: 10,
         flexDirection: 'row',
         paddingHorizontal: 20,
-        paddingVertical: 10,        
+        paddingVertical: 10,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 10,
+            height: 10,
+        },
+        shadowOpacity: 1,
+        shadowRadius: 4.65,
+
+        elevation: 7,
     },
     cardImg: {
         justifyContent: 'space-between',
@@ -25,7 +35,7 @@ const estilo= StyleSheet.create({
     },
     cardTexto: {
         color: '#fff',
-        textAlign: 'center',        
+        textAlign: 'center',
         fontSize: 13,
     },
     botao: {
@@ -36,10 +46,11 @@ const estilo= StyleSheet.create({
     img: {
         width: 100,
         height: 100,
-        borderRadius:50,        
+        borderRadius: 50,
+        
     },
     titulo: {
-        marginBottom:20,
+        marginBottom: 20,
         fontSize: 22,
         fontWeight: 'bold',
         textAlign: 'center',

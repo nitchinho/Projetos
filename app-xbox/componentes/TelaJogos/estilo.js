@@ -1,57 +1,46 @@
 import { StyleSheet } from "react-native";
 
-const estilo= StyleSheet.create({
-    container: {
-        flex:1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#6d6d6d'
-        
-    },
-    card: {
-        width: 250,        
-        backgroundColor: '#107c0f',
-        marginBottom: 20,
-        alignItems: 'center',        
-        borderRadius: 10,
-        flexDirection: 'row',
-        paddingHorizontal: 20,
-        paddingVertical: 10,        
-    },
-    cardImg: {
-        justifyContent: 'space-between',
-        width: 100,
-        height: 100,
-    },
-    cardTexto: {
-        color: '#fff',
-        textAlign: 'center',        
-        fontSize: 13,
-    },
-    botao: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
-    img: {
-        width: 100,
-        height: 100,
-        borderRadius:50,        
-    },
-    titulo: {
-        marginBottom:20,
-        fontSize: 22,
-        fontWeight: 'bold',
-        textAlign: 'center',
-        color: 'darkgreen'
-    },
-    descricao: {
-        textAlign: 'center',
-        color: '#fff',
-        marginBottom: 30,
+const estilos = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: '#121212',
+    padding: 20,
+  },
 
-    }
-
+  titulo: {
+    fontSize:26,
+    fontWeight: "bold",
+    color: '#107c0f',
+    marginBottom: 5,
+  },
+  descricao: {
+    color: '#b2b2b2',
+    textAlign: "center",
+    width: 320,
+    marginBottom: 25,
+  },
+  
+  boxJogo:{
+    width: 320,
+    marginBottom: 50,
+  },
+  card: {
+    width: 320,
+    height: 180,
+    marginBottom: 10,
+  },
+  cardTitulo: {
+    fontSize: 22,
+    fontWeight: "bold",
+    color: '#fff',
+    paddingHorizontal: 15,
+    paddingVertical: 5,
+  },
+  paragrafo: {
+    color: '#d5d5d5',
+  }
 });
 
-export default estilo;
+export default estilos;

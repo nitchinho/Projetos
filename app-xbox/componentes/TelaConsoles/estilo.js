@@ -1,57 +1,36 @@
 import { StyleSheet } from "react-native";
 
-const estilo= StyleSheet.create({
-    container: {
-        flex:1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#6d6d6d'
-        
-    },
-    card: {
-        width: 250,        
-        backgroundColor: '#107c0f',
-        marginBottom: 20,
-        alignItems: 'center',        
-        borderRadius: 10,
-        flexDirection: 'row',
-        paddingHorizontal: 20,
-        paddingVertical: 10,        
-    },
-    cardImg: {
-        justifyContent: 'space-between',
-        width: 100,
-        height: 100,
-    },
-    cardTexto: {
-        color: '#fff',
-        textAlign: 'center',        
-        fontSize: 13,
-    },
-    botao: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
-    img: {
-        width: 100,
-        height: 100,
-        borderRadius:50,        
-    },
-    titulo: {
-        marginBottom:20,
-        fontSize: 22,
-        fontWeight: 'bold',
-        textAlign: 'center',
-        color: 'darkgreen'
-    },
-    descricao: {
-        textAlign: 'center',
-        color: '#fff',
-        marginBottom: 30,
-
-    }
-
+const estilos = StyleSheet.create({
+  container: {
+    backgroundColor: '#e6e6e6',
+  },
+  box: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 20,
+  },
+  img: {
+    width: 200,
+    height: 200,
+  },
+  titulo: {
+    fontSize: 34,
+    color: '#107c10',
+    fontWeight: "bold",
+    marginBottom: 5,
+  },
+  subtitulo: {
+    fontSize: 18,
+    fontWeight: "bold",
+    textAlign: "center",
+    fontWeight: "bold",
+    marginBottom: 10,
+  },
+  paragrafo: {
+    textAlign: "center",
+    fontSize: 16,
+  },
 });
 
-export default estilo;
+export default estilos;
