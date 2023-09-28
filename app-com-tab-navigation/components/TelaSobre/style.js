@@ -5,6 +5,15 @@ const estilo = StyleSheet.create({
     flex:1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: 'lightblue'
+  },
+  titulo: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center'
+  },
+  paragrafo: {
+    textAlign: 'center'
   }
 });
 
