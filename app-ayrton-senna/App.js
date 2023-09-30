@@ -22,7 +22,7 @@ export default function App(props) {
             fontWeight: 'bold',
             color: '#000',
           },
-          tabBarActiveTintColor: '#ba171',
+          tabBarActiveTintColor: '#ba171a',
           tabBarInactiveTintColor: '#000',
           tabBarActiveBackgroundColor: '#fff',
           tabBarInactiveBackgroundColor: '#eecb01',
