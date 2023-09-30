@@ -13,17 +13,18 @@ export default function App(props) {
     <NavigationContainer>
       <Tab.Navigator
         screenOptions={{
-          tabBarLabelStyle: { fontSize: 14, fontWeight: 'bold', },
+          headerTitleAlign: 'center',          
+          headerBackgroundContainerStyle: false,
+          headerStyle: {
+            backgroundColor: 'white',
+            fontWeight: 'bold'
+          },
           tabBarStyle: { backgroundColor: 'white' },
           tabBarActiveTintColor: 'white',
           tabBarInactiveTintColor: 'black',
           tabBarActiveBackgroundColor: 'black',
           tabBarLabelPosition: 'beside-icon',
-          headerTitleAlign: 'center',          
-          headerStyle: {
-            backgroundColor: 'white',            
-          },
-          headerBackgroundContainerStyle: false,
+          tabBarLabelStyle: { fontSize: 14, fontWeight: 'bold', },
         }}
       >
         <Tab.Screen
