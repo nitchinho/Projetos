@@ -17,6 +17,12 @@ fotoCapa: {
     width: 300,    
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
+mar
+    
+
+    
+    
+    
 },
 nome: {
     marginTop: 10,
