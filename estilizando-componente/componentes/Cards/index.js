@@ -6,53 +6,55 @@ import carne from '../../assets/carne.png';
 import refrigerante from '../../assets/refrigerante.png';
 import cerveja from '../../assets/cerveja.png';
 
+import estilo from './estilo';
+
 export default function Cards () {
   return (
-    <View>
-      <View >
-        <Image source = { convidado }/>
+    <View style={estilo.boxDados}>
+      <View style={estilo.boxCard}>
+        <Image style={estilo.boxCardIcone} source = { convidado }/>
 
-        <Text>
+        <Text style={estilo.boxCardTexto}>
           Convidados
         </Text>
 
-        <Text>
+        <Text style={estilo.boxCardValor}>
           1
         </Text>
       </View>
 
-      <View >
-        <Image source = { carne }/>
+      <View style={estilo.boxCard}>
+        <Image style={estilo.boxCardIcone} source = { carne }/>
         
-        <Text>
+        <Text style={estilo.boxCardTexto}>
           Carne
         </Text>
 
-        <Text>
+        <Text style={estilo.boxCardValor}>
           400 GR
         </Text>
       </View>
 
-      <View >
-        <Image source = { refrigerante }/>
+      <View style={estilo.boxCard}>
+        <Image style={estilo.boxCardIcone} source = { refrigerante }/>
         
-        <Text>
+        <Text style={estilo.boxCardTexto}>
           Refrigerante
         </Text>
 
-        <Text>
+        <Text style={estilo.boxCardValor}>
           700 ML
         </Text>
       </View>
 
-      <View >
-        <Image source = { cerveja }/>
+      <View style={{flexDirection: 'column-reverse'}}>
+        <Image style={estilo.boxCardIcone} source = { cerveja }/>
         
-        <Text>
+        <Text style={estilo.boxCardTexto}>
           Cerveja
         </Text>
 
-        <Text>
+        <Text style={estilo.boxCardValor}>
           4 Latas
         </Text>
       </View>
