@@ -1,13 +1,13 @@
 import React from 'react';
-import Header from './components/Header';
-import Body from './components/Body/index'
-import { SafeAreaView, View } from 'react-native';
+import { View } from 'react-native';
+import Titulo from './componentes/Titulo';
+import TelaInicial from './componentes/TelaInicial';
 
 export default function App() {
   return (
-    <SafeAreaView>
-    <Header/>
-    <Body/>
-    </SafeAreaView>
+    <View>
+      <Titulo />
+      <TelaInicial />
+    </View>
   );
 }
