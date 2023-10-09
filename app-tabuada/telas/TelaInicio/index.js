@@ -30,9 +30,9 @@ const TelaInicio = (props) => {
     criarQuestao();
   }
 
-  const abrirTelaTabuada = () => {
-    props.navigation.navigate('Tabuada');
-  }
+  // const abrirTelaTabuada = () => {
+  //   props.navigation.navigate('Tabuada');
+  // }
 
   return (
     <ImageBackground source={fundo} style={estilo.imagemFundo}>
@@ -62,7 +62,7 @@ const TelaInicio = (props) => {
             <TextInput 
               textAlign="center"
               onChangeText={ setRespostaUsuario } 
-              keyboardType="numeric" 
+              keyboardType="number-pad" 
               value={respostaUsuario.toString()} 
               autoFocus={true}
               maxLength={3} 

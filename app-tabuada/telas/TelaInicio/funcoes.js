@@ -22,9 +22,7 @@ export const validarResposta = (numero1, geraSimboloMatematicoAleatorio, numero2
       break;
     case '-':
       respostaCerta = numero1 - numero2
-      break;    
-    default: 'Erro'
-      break;
+      break;        
   }
 
   if (respostaUsuario == respostaCerta) {
