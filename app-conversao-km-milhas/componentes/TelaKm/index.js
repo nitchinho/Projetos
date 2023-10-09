@@ -6,11 +6,11 @@ import Resultado from '../resultadoConversao';
 import Input from '../inputConversao';
 
 
-const ConverterKm = () => {
+const ConverterKm = (props) => {
     return (
         <SafeAreaView>
             <ImageBackground source={bg} blurRadius={150} style={estilo.background}>
-                <Input />
+                <Input titulo="Conversor de quilômetros para milhas" medida = "Quilômetros" />
                 <Resultado />
             </ImageBackground>
         </SafeAreaView>

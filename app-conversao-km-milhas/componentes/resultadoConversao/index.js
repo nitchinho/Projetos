@@ -6,9 +6,9 @@ import estilo from '../../assets/estilos';
 const Resultado = () => {
     return (
         <View style={estilo.cardInput}>
-            <Text style={estilo.titulo}>
-                Componente resultadoConversao
-            </Text>
+            <View style={estilo.cardResultadoValor}></View>
+            <Text style={estilo.cardValor}>0</Text>
+            <Text style={estilo.cardTitulo}>Componente resultadoConversao</Text>
         </View>
     )
 

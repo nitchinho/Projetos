@@ -14,9 +14,35 @@ const estilo = StyleSheet.create({
     },
     titulo: {
         color: '#fff',
-        textAlign: 'center',
-        fontWeight: 'bold'
+        textAlign: 'center',        
+        fontSize: 20,
+        padding: 10,
     },
+    cardMedidas: {
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        paddingVertical: 20,
+        paddingHorizontal: 20,
+        alignItems: 'center',        
+    },
+    cardMedidaNome: {
+        backgroundColor: '#9eda7b',
+        paddingVertical: 10,
+        paddingHorizontal: 10,
+        borderRadius: 8,
+        fontSize: 18,
+        marginRight: 10,
+
+    },
+    cardMedidaInput: {
+        backgroundColor: '#fff',
+        paddingVertical: 10,
+        paddingHorizontal: 80,
+        borderRadius: 8,
+        fontSize: 18,
+    }
+
+
 
 
 })

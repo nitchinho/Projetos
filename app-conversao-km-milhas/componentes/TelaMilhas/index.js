@@ -9,7 +9,7 @@ const ConverterMilhas = () => {
     return (
         <SafeAreaView>
             <ImageBackground source={bg} blurRadius={150} style={estilo.background}>
-                <Input />
+                <Input titulo="Conversor de Milhas para quilômetros" medida="Milhas"/>
                 <Resultado />
             </ImageBackground>
         </SafeAreaView>
