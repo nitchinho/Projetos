@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native'
+import { View, Text, TextInput } from 'react-native'
 import estilo from '../../assets/estilos';
 
 const Input = (props) => {
@@ -8,7 +8,12 @@ const Input = (props) => {
             <Text style={estilo.titulo}>{props.titulo}</Text>
             <View style={estilo.cardMedidas}>
                 <Text style={estilo.cardMedidaNome}>{props.medida}</Text>
-                <Text style={estilo.cardMedidaInput}>6.25</Text>
+                <TextInput
+                style={estilo.cardMedidaInput}
+                keyboardType='decimal-pad'
+                defaultValue='0'
+                onChangeText={props.funcaoTextoAlterado}
+                />
             </View>
         </View>
     )

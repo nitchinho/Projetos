@@ -40,7 +40,21 @@ const estilo = StyleSheet.create({
         paddingHorizontal: 80,
         borderRadius: 8,
         fontSize: 18,
+    },
+    cardResultadoValor: {
+        alignItems: 'center'
+    },
+    cardTitulo: {
+        color: '#fff',
+        fontSize: 25,                
+        paddingBottom: 20,
+    },
+    cardValor: {
+        color: '#fff',
+        fontSize: 80,
+        paddingBottom: 10,
     }
+
 
 
 
