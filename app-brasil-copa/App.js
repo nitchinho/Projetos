@@ -9,7 +9,7 @@ const Navegacao = createStackNavigator();
 const App = () => (
 
   <NavigationContainer>
-    <Navegacao.Navigator>
+    <Navegacao.Navigator screenOptions={{headerShown: false}}>
       <Navegacao.Screen name="Inicio" component={TelaInicio} />
     </Navegacao.Navigator>
   </NavigationContainer>

@@ -1,14 +1,25 @@
 import React from 'react';
-import { View, Text, ImageBackground } from 'react-native'
+import { ImageBackground, Text, SafeAreaView } from 'react-native';
+import CardInicio from './ItemInicio';
+
+import bg from '../../assets/background.png'
+import finais from '../../assets/bg_finais.png'
+import artilheiros from '../../assets/bg_artilheiros.png'
+import titulos from '../../assets/bg_titulos.png'
+
+import estilos from '../../assets/estilo'
+
 
 const TelaInicio = () => {
-
     return (
-        <View >
-            <Text style={{ fontSize: 16, color: '#000' }}> BRASIL NAS COPAS DO MUNDO</Text>
-        </View>
-    );
-
+        <SafeAreaView style={estilos.container}>
+            <ImageBackground source={bg} resizeMode="cover" blurRadius={10}>
+                <Text style={estilos.titulo}>Brasil nas copas do mundo</Text>
+                <CardInicio fundo={finais} texto="finais" />
+                <CardInicio fundo={artilheiros} texto="artilheiros" />
+                <CardInicio fundo={titulos} texto="títulos" />
+            </ImageBackground>
+        </SafeAreaView>
+    )
 };
-
-export default TelaInicio;
+export default TelaInicio
