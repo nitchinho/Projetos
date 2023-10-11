@@ -51,6 +51,19 @@ const estilo = StyleSheet.create({
     marginBottom: 50
   },
 
+  boxNumero2:{
+    borderColor: '#063970',
+    backgroundColor: '#2596be',
+    borderWidth: 5,
+    height: 150,
+    width: 300,
+    borderRadius: 75,
+    justifyContent: "center",
+    alignItems:"center",
+    marginTop: 50,
+    marginBottom: 50
+  },
+
 
   numero: {
     fontSize: 50,

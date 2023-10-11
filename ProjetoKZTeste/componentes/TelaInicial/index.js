@@ -24,35 +24,51 @@ const nomes = [
 ]
 
 const TelaInicial = () => {
-  const [ nomeSorteado, setNomeSorteado ] = useState('');
+  const [nomeSorteado, setNomeSorteado] = useState('');
+  const [corFundo, setCorFundo] = useState(estilo.boxNumero);
 
   const gerarNome = () => {
     const novoNome = Math.floor(Math.random() * nomes.length);
     setNomeSorteado(nomes[novoNome]);
-  }  
+  };
+
+  const exibirNomes = () => {
+    setCorFundo(estilo.boxNumero)
+    let i = 0;
+    while (i < 100) {
+      setTimeout(() => {
+        gerarNome();
+      }, 0.5);      
+      i++;
+    }
+    setTimeout(() => {
+      setCorFundo(estilo.boxNumero2);
+    }, 10);      
+  };
 
   const limparNome = () => {
-    setNomeSorteado('')    
+    setNomeSorteado('')
+    setCorFundo(estilo.boxNumero)
   }
 
   return (
     <View style={estilo.tela}>
       <View>
-      <Text style={estilo.titulo}>
-        Toque no botão e veja quem é o vencedor do sorteio
-      </Text>
-      <Image style={estilo.logo} source={Logo}/>
+        <Text style={estilo.titulo}>
+          Toque no botão e veja quem é o vencedor do sorteio
+        </Text>
+        <Image style={estilo.logo} source={Logo} />
       </View>
 
-      <View style={estilo.boxNumero}>
+      <View style={corFundo}>
         <Text style={estilo.numero}>{nomeSorteado}</Text>
       </View>
 
       <View style={estilo.boxBotao}>
-        <Button title="Sortear" onPress={gerarNome} color="#1f4f66"/>        
+        <Button title="Sortear" onPress={exibirNomes} color="#1f4f66" />
       </View>
       <View>
-      <Button title="Limpar" onPress={limparNome} color="#1f4f66"/>
+        <Button title="Limpar" onPress={limparNome} color="#1f4f66" />
       </View>
     </View>
   );
@@ -61,5 +77,5 @@ const TelaInicial = () => {
 export default TelaInicial;
 
 
-<TextInput 
+<TextInput
   textAlign="left" />
