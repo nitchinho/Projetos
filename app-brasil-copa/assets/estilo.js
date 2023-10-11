@@ -1,21 +1,21 @@
 import { StyleSheet } from "react-native";
 
 const estilos = StyleSheet.create({
-
-    container:{        
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-
     titulo: {
+        paddingTop: 20,
         fontSize: 24,
         fontWeight: 'bold',
         color: '#fff',
         textTransform: 'uppercase',
         textAlign: 'center',
-        marginTop:50,
-        marginBottom: 30
+        marginVertical: 25,
     },
+    imagemFundo: {        
+        height: '100%',
+        width: '100%',
+        alignItems: 'center'
+    }
+
 });
 
 export default estilos;

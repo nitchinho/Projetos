@@ -1,31 +1,32 @@
 import { StyleSheet } from "react-native";
 
 const estilos = StyleSheet.create({
-    Cards: {
-        flex:1,        
+    itemMenu: {        
         marginVertical: 15,
         paddingHorizontal: 15,
-        
     },
-    imgFundo: {
-        height: 180,
+    imagemFundoMenu: {
         width: 350,
+        height: 180,
     },
-    cardFundoEscuro: {
+    textoMenu: {
+        fontSize: 50,
+        fontWeight: 'bold',
+        color: '#ffffff',
+        textTransform: 'uppercase',
+
+        width: 350,
+        height: 180,
+
+        textAlign: 'center',
+        textAlignVertical: 'center',
+
+    },
+    fundoEscuro: {
         backgroundColor: 'rgba(0,0,0,0.6)',
         borderRadius: 20,
         height: '100%',
     },
-    cardTexto: {
-        fontSize: 50,
-        fontWeight: 'bold',
-        color: '#rgba(255, 255, 255, 0.80)',
-        textTransform: 'uppercase',
-        width: '100%',
-        height: '100%',
-        textAlign: 'center',
-        textAlignVertical: 'center',
-    }
 });
 
 export default estilos;
