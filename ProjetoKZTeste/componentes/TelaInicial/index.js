@@ -35,10 +35,10 @@ const TelaInicial = () => {
   const exibirNomes = () => {
     setCorFundo(estilo.boxNumero)
     let i = 0;
-    while (i < 100) {
+    while (i < 700) {
       setTimeout(() => {
         gerarNome();
-      }, 0.5);      
+      }, 0.9);      
       i++;
     }
     setTimeout(() => {
