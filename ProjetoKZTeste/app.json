@@ -25,10 +25,16 @@
         "backgroundColor": "#ffffff",
         "package": "com.devup.sorteiokidszone",
         "versionCode": 1
-      }
+      },
+      "package": "com.devup.sorteiokidszone"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "683ee6fa-8394-41b9-9945-321b37edb2af"
+      }
     }
   }
 }
