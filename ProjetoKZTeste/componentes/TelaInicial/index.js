@@ -1,49 +1,26 @@
 import React, { useState } from 'react';
-import { View, Text, Button, TextInput, Image } from 'react-native';
+import { View, Text, Button, TextInput, Image, Pressable } from 'react-native';
+import { nomes } from './dados/dados';
 import estilo from './estilo';
 import Logo from '../../assets/logokz.png'
-
-const nomes = [
-  "Rodrigo",
-  "Camila",
-  "Lidiane",
-  "Luiza",
-  "Armando",
-  "Rebeca",
-  "Erick",
-  "Bianca",
-  "Vanessa",
-  "Fernando",
-  "Ribamar",
-  "João",
-  "Ribamar",
-  "Marcelo",
-  "Mirian",
-  "Vanessa B.",
-  "Valter"
-]
 
 const TelaInicial = () => {
   const [nomeSorteado, setNomeSorteado] = useState('');
   const [corFundo, setCorFundo] = useState(estilo.boxNumero);
 
-  const gerarNome = () => {
-    const novoNome = Math.floor(Math.random() * nomes.length);
-    setNomeSorteado(nomes[novoNome]);
-  };
-
-  const exibirNomes = () => {
+  const sortearNomes = () => {
     setCorFundo(estilo.boxNumero)
     let i = 0;
-    while (i < 700) {
+    while (i < 200) {
       setTimeout(() => {
-        gerarNome();
-      }, 0.9);      
+        const novoNome = Math.floor(Math.random() * nomes.length);
+        setNomeSorteado(nomes[novoNome]);
+      }, 0.9);
       i++;
     }
     setTimeout(() => {
       setCorFundo(estilo.boxNumero2);
-    }, 10);      
+    }, 10);
   };
 
   const limparNome = () => {
@@ -65,7 +42,10 @@ const TelaInicial = () => {
       </View>
 
       <View style={estilo.boxBotao}>
-        <Button title="Sortear" onPress={exibirNomes} color="#1f4f66" />
+        <Pressable style={estilo.pressable} onPress={sortearNomes}>
+          <Text style={estilo.pressableText}>sortear</Text>
+
+        </Pressable>
       </View>
       <View>
         <Button title="Limpar" onPress={limparNome} color="#1f4f66" />
@@ -75,7 +55,3 @@ const TelaInicial = () => {
 }
 
 export default TelaInicial;
-
-
-<TextInput
-  textAlign="left" />
