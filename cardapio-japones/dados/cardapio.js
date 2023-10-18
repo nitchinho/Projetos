@@ -32,13 +32,13 @@ const cardapio = [
     {nome:"Temaki (Salmão)" , descricao: "Cones feitos de alga recheado com salmão, arroz e cebolinha.", categoria: "Temaki", pratoSugerido: false, imagem: temaki_salmao},
     {nome:"Temaki (Atum)" , descricao: "Cones feitos de alga recheado com atum, arroz e cebolinha.", categoria: "Temaki", pratoSugerido: false, imagem: temaki_atum},
     {nome:"Sashimi (Salmão)" , descricao: "Fatias finas de salmao cru.", categoria: "Sashimi", pratoSugerido: true, imagem: sashimi_salmao},
-    {nome:"Sahimi (Atum)" , descricao: "Fatias finas de atum cru.", categoria: "Sashimi", pratoSugerido: false, imagem: sashimi_atum},
+    {nome:"Sashimi (Atum)" , descricao: "Fatias finas de atum cru.", categoria: "Sashimi", pratoSugerido: false, imagem: sashimi_atum},
     {nome:"Shimeji" , descricao: "Porção de cogumelos Shimeki na manteiga", categoria: "Cogumelos", pratoSugerido: false, imagem: shimeji},
     {nome:"Shitake" , descricao: "Porção de cogumelos Shitake na manteiga", categoria: "Cogumelos", pratoSugerido: false, imagem: shitake},
     {nome:"Gyoza (Carne)" , descricao: "Bolinho frito recheado com carne", categoria: "Gyoza", pratoSugerido: true, imagem: gyoza},
     {nome:"Gyoza (Legumes)" , descricao: "Bolinho frito recheado com legumes", categoria: "Gyoza", pratoSugerido: false, imagem: gyoza},
     {nome:"Tempurá (Camarão)" , descricao: "Camarões fritos em uma massa leve.", categoria: "Tempura", pratoSugerido: false, imagem: tempura_camarao},
-    {nome:"Tempura (Salmão)" , descricao: "Salmão frito em uma massa leve.", categoria: "Tempura", pratoSugerido: true, imagem: tempura_salmao}
+    {nome:"Tempurá (Salmão)" , descricao: "Salmão frito em uma massa leve.", categoria: "Tempura", pratoSugerido: true, imagem: tempura_salmao}
 ]
 
 export default cardapio

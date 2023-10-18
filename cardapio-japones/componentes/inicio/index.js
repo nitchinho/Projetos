@@ -19,7 +19,7 @@ export default function Inicio() {
             setTitulo("Você buscou por: " + inputTerm)
         }
         else {
-            setCardapioLista(filtroSugestoes())
+            setCardapioLista(filterSugestoes())
             setTitulo("Sugestões")
         }
         setTermo(inputTerm);
@@ -36,7 +36,7 @@ export default function Inicio() {
             <ScrollView>
                 {
                     cardapioLista.map((produto, index) => (
-                        <ItemCardapio key={index} nome={produto.nome} descricao={produto.descricao} imagem={produto.imagem} />
+                        <ItemCardapio key={index} titulo={produto.nome} descricao={produto.descricao} imagem={produto.imagem} />
                     ))
                 }
             </ScrollView>
