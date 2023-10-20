@@ -4,7 +4,7 @@ import {Dimensions} from 'react-native';
 const styles = StyleSheet.create({
 
     cardArea: {
-        backgroundColor: 'lightgrey',
+        backgroundColor: '#dadada',
         justifyContent: 'center',        
         width: '100%',
         height: 350,
@@ -14,9 +14,10 @@ const styles = StyleSheet.create({
     },
 
     cardImg: {
-        borderRadius: 24,
+        borderTopLeftRadius: 24,
+        borderTopRightRadius: 24,        
         borderWidth: 3,
-        borderColor: '#ffffff',
+        borderColor: '#dadada',
         marginTop: 2.5,
         marginLeft: 2.5,
         justifyContent: 'center',
@@ -30,7 +31,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 7,
         height: 85,
         marginHorizontal: 5,
-        marginVertical: 8,
+        marginVertical: 5,
         borderBottomRightRadius: 24,
         borderBottomLeftRadius: 24,
         justifyContent: 'center',
@@ -40,14 +41,14 @@ const styles = StyleSheet.create({
         color: '#000',
         fontWeight: 'bold',
         textAlign: 'center',
-        fontSize: 19,
-        
+        fontSize: 19,       
 
     },
     cardDescr: {
         color: '#323232',
-        width: 247,
-        fontSize: 14,
+        width: 250,
+        fontSize: 15,
+        fontStyle: 'italic',
         lineHeight: 20,
     },
     

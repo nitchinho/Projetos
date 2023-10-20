@@ -1,14 +1,8 @@
 import cardapio from "../dados/cardapio"
 
 export function searchItemCardapio(inputTerm) {
-    const itemCardapio = cardapio.filter((item) =>
-        item.nome.toLowerCase().includes(inputTerm.toLowerCase())
-        ||
-        item.descricao.toLowerCase().includes(inputTerm.toLowerCase())
-        ||
-        item.categoria.toLowerCase().includes(inputTerm.toLowerCase()))
-
-    return itemCardapio
+    return cardapio.filter((item) => item.nome.toLowerCase().includes(inputTerm.toLowerCase()))
+    
 }
 
 export function filterCategoria(categoria) {

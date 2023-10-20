@@ -2,23 +2,25 @@ const options = {
     tabBarScrollEnabled: true,
     tabBarGap: 10,
     tabBarStyle: {
-      backgroundColor: '#f11635',
+      backgroundColor: '#e10096',
       paddingTop: 10,
-      shadowColor: 'transparent',
+      shadowColor: 'transparent',      
     },
     tabBarItemStyle: {
       width: "auto",
-      padding: 0,
+      padding: 0,      
     },
-    tabBarLabelStyle: {
-      fontSize: 12, 
-      color: '#ffffff',
+    tabBarLabelStyle: {      
+      fontSize: 15, 
+      color: '#000',      
       textAlign: 'center',
+      
     },
     tabBarIndicatorStyle: {
       backgroundColor: 'white',
-      marginBottom: 8,
+      marginBottom: 10,
     },
+    
   }
 
   export default options;
