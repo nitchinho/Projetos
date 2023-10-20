@@ -1,4 +1,4 @@
-import cardapio from "../dados/cardapio"
+import cardapio from "../data/cardapio"
 
 export function searchItemCardapio(inputTerm) {
     return cardapio.filter((item) => item.nome.toLowerCase().includes(inputTerm.toLowerCase()))
