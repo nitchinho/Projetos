@@ -16,12 +16,11 @@ let selecoes = [
 
 let data = new Date();
 let dia_mes = data.getDate();
-let mes = data.getMonth();
 
 let selecao;
 
 if (dia_mes < 11) {
-    selecao = selecoes.nome[mes - 1];
+    selecao = selecoes[dia_mes - 1].nome;
 }
 else {
     selecao = "Não há uma seleção para hoje";
@@ -31,5 +30,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(8080, () => {
-    console.log('Servidor node iniciado em: ' + dia_mes + " " +mes);
+    console.log(selecao);
 })
