@@ -4,11 +4,11 @@ import { buscaPorAno, buscaPorId, buscaTodos, calculoReajuste, validaErro } from
 const app = express();
 
 app.get('/historicoIPCA/calculo', (req, res) => {
-    const valor = parseFloat(req.query.valor);
-    const dataInicioMes = parseInt(req.query.mesInicio);
-    const dataInicioAno = parseInt(req.query.anoInicio);
-    const dataFinalMes = parseInt(req.query.mesFinal);
-    const dataFinalAno = parseInt(req.query.anoFinal);
+    const valor = parseFloat(req.params.valor);
+    const dataInicioMes = parseInt(req.params.mesInicio);
+    const dataInicioAno = parseInt(req.params.anoInicio);
+    const dataFinalMes = parseInt(req.params.mesFinal);
+    const dataFinalAno = parseInt(req.params.anoFinal);
 
     if (validaErro(valor, dataInicioMes, dataInicioAno, dataFinalMes, dataFinalAno)) {
         res.status(400).json({ erro: 'Dados Inválidos' });
