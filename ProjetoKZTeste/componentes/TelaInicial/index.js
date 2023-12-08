@@ -28,6 +28,11 @@ const TelaInicial = () => {
     setCorFundo(estilo.boxNumero)
   }
 
+  const listaSorteados = () => {
+    const listasorteado = [];
+    listasorteado.push(nomeSorteado)
+  }
+
   return (
     <View style={estilo.tela}>
       <View>
