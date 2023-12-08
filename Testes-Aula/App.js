@@ -1,20 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+import { nomes } from "./dados";
+
+function sorteio() {
+  var quandidade = nomes.length;
+  var sorteioAleatorio = parseInt(Math.random() * quandidade);
+  document.write("O nome sorteado foi o " + nomes[sorteioAleatorio])
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+console.log(sorteio())
